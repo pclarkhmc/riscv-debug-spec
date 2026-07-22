@@ -242,7 +242,7 @@ same project unless stated otherwise.
 
         This register is only accessible in HS-Mode, M-mode and Debug Mode. If
         Smstateen is implemented, then accessibility of in HS-Mode is
-        controlled by `mstateenzero[57]`.
+        controlled by `mstateen0[57]`.
 
         This register is an alias of the {csr-mcontext} register, providing
         access to the {mcontext-hcontext} field from HS-Mode.
@@ -252,8 +252,8 @@ same project unless stated otherwise.
         This optional register is only accessible in S/HS-mode, VS-mode,
         M-mode and Debug Mode.
 
-        Accessibility of this CSR is controlled by `mstateenzero[57]` and
-        `hstateenzero[57]` in the Smstateen extension.  Enabling {csr-scontext}
+        Accessibility of this CSR is controlled by `mstateen0[57]` and
+        `hstateen0[57]` in the Smstateen extension.  Enabling {csr-scontext}
         can be a security risk in a virtualized system with a hypervisor that
         does not swap {csr-scontext}.
         <field name="0" bits="XLEN-1:32" access="R" reset="0" />
